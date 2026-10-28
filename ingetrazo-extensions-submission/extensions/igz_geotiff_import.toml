@@ -1,0 +1,37 @@
+# Catalog entry for the IngeTrazo extensions directory.
+# Copy this file to extensions/igz_geotiff_import.toml in
+# https://github.com/ingelibre/ingetrazo-extensions and open a pull request.
+
+id = "igz_geotiff_import"
+version = "1.0.0"
+author = "Ezequiel M. Rezende"
+author_url = "https://github.com/em-rezende"
+
+license = "GPL-3.0-or-later"
+repository = "https://github.com/em-rezende/Ingetrazo-igz-geotiff-import"
+
+# Release asset of tag v1.0.0 — a .zip with the single package folder
+# `igz_geotiff_import/` (the same bytes whose SHA-256 is below).
+download = "https://github.com/em-rezende/Ingetrazo-igz-geotiff-import/releases/download/v1.0.0/igz_geotiff_import.zip"
+sha256 = "7894ae4d0d01c995ef7572333680b481112deda2cb402671ab42971496355939"
+
+ingetrazo = "0.5.8"
+
+tags = ["import-export", "terrain", "productivity"]
+
+screenshot = "igz_geotiff_import.png"
+
+[name]
+es = "Importación GeoTIFF"
+en = "GeoTIFF Import"
+pt = "Importação GeoTIFF"
+
+[summary]
+es = "Importa ortofotos e imágenes satelitales GeoTIFF georreferenciadas en el datum de la escena, con rótulos de coordenadas, reproyección UTM, retícula, recorte, captura de mapa y deshacer en un paso."
+en = "Imports georeferenced GeoTIFF orthophotos and satellite imagery at the scene datum, with coordinate labels, UTM reprojection, grids, crop, map capture and one-step undo."
+pt = "Importa ortofotos e imagens de satélite GeoTIFF georreferenciadas no datum da cena, com rótulos de coordenadas, reprojeção UTM, grade, recorte, captura de mapa e desfazer em um passo."
+
+[description]
+es = "GeoTIFF Import es un conjunto de herramientas SIG dentro de IngeTrazo: coloca ortofotos e imágenes satelitales en su posición real anclando el datum de la escena, de modo que el modelo queda cerca del origen (0,0,0) y sin el temblor de float32. Añade una lista de imágenes, rótulos de coordenadas en las esquinas y por clic, comprobación y reproyección de zonas UTM, retícula de coordenadas, recorte por polígono y Capture Map, que captura las teselas del mapa base en vista de planta ortográfica con metadatos UTM reales tomados del datum. Todas las ediciones son un solo paso de deshacer en el historial del viewport y la interfaz está traducida al inglés, portugués, español, francés, alemán, italiano y chino simplificado. No requiere paquetes de Python externos."
+en = "GeoTIFF Import is a GIS toolkit inside IngeTrazo: it places orthophotos and satellite images at their real position by anchoring the scene datum, keeping the model near the origin (0,0,0) and free of float32 jitter. It adds an image manager, corner and click coordinate labels, UTM zone checks and reprojection, a coordinate grid, polygon cropping and Capture Map, which grabs base-map tiles in an orthographic top view with true UTM metadata read from the datum. Every edit is one undo step on the viewport history, and the interface is translated into English, Portuguese, Spanish, French, German, Italian and Simplified Chinese. No external Python packages are required."
+pt = "GeoTIFF Import é um conjunto de ferramentas SIG dentro do IngeTrazo: posiciona ortofotos e imagens de satélite na posição real ancorando o datum da cena, mantendo o modelo próximo à origem (0,0,0) e livre do jitter de float32. Adiciona uma lista de imagens, rótulos de coordenadas nos cantos e por clique, verificação e reprojeção de zonas UTM, grade de coordenadas, recorte por polígono e Capture Map, que captura as tiles do mapa base em vista topo ortográfica com metadados UTM reais lidos do datum. Toda edição é um único passo de desfazer no histórico do viewport e a interface é traduzida para inglês, português, espanhol, francês, alemão, italiano e chinês simplificado. Não exige pacotes Python externos."
