@@ -1,0 +1,16 @@
+# Normalise line endings: the extension is plain Python/JSON/SVG and runs on
+# Windows and Linux alike, so the repository stores LF for every text file.
+* text=auto eol=lf
+
+*.py    text eol=lf
+*.md    text eol=lf
+*.json  text eol=lf
+*.svg   text eol=lf
+*.toml  text eol=lf
+*.txt   text eol=lf
+
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.ico   binary

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2026 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="5.4186mm" height="5.4186mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 541.86 541.86"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="591" font-variant="normal" style="fill-rule:nonzero" font-weight="700">
+	<font-face 
+		font-family="Arial Narrow">
+		<font-face-src>
+			<font-face-name name="Arial Narrow Negrito"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="/" horiz-adv-x="228" d="M-1.00047 -12.0056l145.501 740.012 84.5061 0 -146.502 -740.012 -83.5056 0z"/>
+   <glyph unicode="E" horiz-adv-x="546" d="M59.9947 0l0 716.001 435.003 0 0 -120.99 -316.981 0 0 -158.007 294.971 0 0 -120.99 -294.971 0 0 -195.024 327.986 0 0 -120.99 -446.008 0z"/>
+   <glyph unicode="N" horiz-adv-x="591" d="M61.9956 0l0 716.001 114.854 0 241.146 -478.156 0 478.156 110.018 0 0 -716.001 -118.855 0 -237.144 466.818 0 -466.818 -110.018 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial Narrow";font-variant:normal;font-weight:bold;src:url("#FontID0") format(svg)}
+    .fil0 {fill:#FEFEFE}
+    .fil1 {fill:#373435}
+    .fil2 {fill:#1A7FD4}
+    .fnt0 {font-weight:bold;font-size:299.86px;font-family:'Arial Narrow'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M80.52 533.4l380.82 0c39.64,0 72.06,-32.42 72.06,-72.06l0 -380.82c0,-39.64 -32.42,-72.06 -72.06,-72.06l-380.82 0c-39.64,0 -72.06,32.42 -72.06,72.06l0 380.82c0,39.64 32.42,72.06 72.06,72.06z"/>
+  <g>
+   <path class="fil0" d="M84.65 508l372.56 0c27.94,0 50.79,-22.85 50.79,-50.79l0 -372.56c0,-27.94 -22.85,-50.79 -50.79,-50.79l-372.56 0c-27.94,0 -50.79,22.85 -50.79,50.79l0 372.56c0,27.94 22.85,50.79 50.79,50.79z"/>
+   <path class="fil1" d="M84.65 483l372.56 0c7.12,0 13.57,-2.88 18.19,-7.5l0.1 -0.1c4.62,-4.62 7.5,-11.07 7.5,-18.19l0 -372.56c0,-7.12 -2.88,-13.57 -7.5,-18.19l-0.1 -0.1c-4.62,-4.62 -11.07,-7.5 -18.19,-7.5l-372.56 0c-7.12,0 -13.57,2.88 -18.19,7.5l-0.1 0.1c-4.62,4.62 -7.5,11.07 -7.5,18.19l0 372.56c0,7.12 2.88,13.57 7.5,18.19l0.1 0.1c4.62,4.62 11.07,7.5 18.19,7.5zm0 25l372.56 0c27.94,0 50.79,-22.85 50.79,-50.79l0 -372.56c0,-27.94 -22.85,-50.79 -50.79,-50.79l-372.56 0c-27.94,0 -50.79,22.85 -50.79,50.79l0 372.56c0,27.94 22.85,50.79 50.79,50.79z"/>
+  </g>
+  <g transform="matrix(1 0 0 1 0.61 113.66)">
+   <text x="66.02" y="270.93"  class="fil2 fnt0">E/N</text>
+  </g>
+ </g>
+</svg>
