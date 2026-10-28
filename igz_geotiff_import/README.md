@@ -9,7 +9,7 @@ Unlike standard image importers, this plugin seamlessly places orthophotos and s
 This plugin provides a complete suite of GIS-like tools inside IngeTrazo: coordinate labeling, UTM zone reprojection (without moving the geometry), coordinate grids, interactive point coordinate placement, image cropping with layer management, **map tile capture**, and a centralized image management panel.
 
 - **Author:** Ezequiel M. Rezende
-- **Version:** 1.4.0 (Added **Capture Map** for tile-layer screenshots)
+- **Version:** 1.0.0 (first public release)
 - **Tested with:** IngeTrazo 0.5.8 (Windows / Linux)
 - **License:** GPL-3.0-or-later — same as IngeTrazo
 
@@ -328,7 +328,7 @@ Multi-file imports, cropping (including the optional deletion of the original im
 
 ## Known Limitations
 
-The following behaviors are **intentional or current limitations** of version 1.4.0. They are documented here so users are not surprised by the results:
+The following behaviors are **intentional or current limitations** of version 1.0.0. They are documented here so users are not surprised by the results:
 
 - **`Capture Map` — needs a datum for UTM metadata:** with a `SceneDatum` the record carries the true UTM/WGS84 coordinates; without one it stores local metres and `coord_system="local"` (the image still lands correctly in the scene).
 - **`Capture Map` — resolution follows the view:** the capture is rendered at the viewport's pixel size, so zoom in before capturing when you need more detail.

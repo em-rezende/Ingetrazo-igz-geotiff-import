@@ -10,7 +10,7 @@ import sys
 
 from PySide6.QtGui import QIcon, QPalette
 
-__version__ = "1.4.0"
+__version__ = "1.0.0"
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _ICONS_DIR = os.path.join(_HERE, "icons")
@@ -26,6 +26,19 @@ _catalog = {}
 _catalog_cache = {}
 _active_lang = None
 _icon_cache = {}
+
+#: Catalog file for host language tags that differ from ours. IngeTrazo reports
+#: ``zh-CN`` and ``pt-BR``; other builds or user settings may report ``zh``,
+#: ``zh-CH``, ``zh-Hans``, an underscore tag or plain ``pt``. Anything we do not
+#: ship maps to ``en``, which means "let IngeTrazo's own catalog translate it".
+_LANG_ALIASES = {
+    "pt": "pt-BR",
+    "zh": "zh-CN",
+    "zh-ch": "zh-CN",
+    "zh-hans": "zh-CN",
+    "zh-hans-cn": "zh-CN",
+    "zh-sg": "zh-CN",
+}
 
 
 def plugin_dir() -> str:
@@ -64,10 +77,33 @@ def load_module(name: str):
 # i18n
 # ---------------------------------------------------------------------------
 
+def _catalog_lang(lang: str) -> str:
+    """Map a host language tag to one of our catalog files.
+
+    ``zh``, ``zh-CH``, ``zh-Hans``, ``zh_CN`` and ``pt`` all resolve to the
+    catalogs this plugin ships; a language we do not ship (``ru``, ``pl``…)
+    resolves to ``en``, so :func:`tr` falls through to IngeTrazo's own catalog
+    instead of showing English.
+    """
+    tag = str(lang or "").strip().replace("_", "-")
+    if not tag:
+        return _SOURCE_LANG
+    exact = tag if os.path.isfile(os.path.join(_I18N_DIR, tag + ".json")) else None
+    if exact:
+        return exact
+    alias = _LANG_ALIASES.get(tag.lower())
+    if alias:
+        return alias
+    base = tag.split("-")[0].lower()
+    if os.path.isfile(os.path.join(_I18N_DIR, base + ".json")):
+        return base
+    return _LANG_ALIASES.get(base, _SOURCE_LANG)
+
+
 def _plugin_lang() -> str:
     try:
         from core.i18n import current_language
-        return current_language() or _SOURCE_LANG
+        return _catalog_lang(current_language())
     except Exception:
         return _SOURCE_LANG
 

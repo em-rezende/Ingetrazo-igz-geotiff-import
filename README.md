@@ -5,7 +5,7 @@ georeferenced orthophotos anchored at the scene datum, coordinate labels, UTM
 reprojection, coordinate grids, polygon cropping, **map-tile capture** and an
 image manager — all undoable with `Ctrl+Z`.
 
-**Version 1.4.0** · GPL-3.0-or-later · Tested with IngeTrazo 0.5.8 (Windows / Linux)
+**Version 1.0.0** · GPL-3.0-or-later · Tested with IngeTrazo 0.5.8 (Windows / Linux)
 
 | Documentation | |
 | :--- | :--- |

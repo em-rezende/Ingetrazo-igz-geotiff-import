@@ -9,7 +9,7 @@ Diferente dos importadores de imagem padrão, este plugin insere ortofotos e ima
 Este plugin fornece um conjunto completo de ferramentas de SIG dentro do IngeTrazo: rotulagem de coordenadas, reprojeção de zonas UTM (sem mover a geometria), grades de coordenadas, posicionamento interativo de pontos de coordenadas, recorte de imagem com gerenciamento de camadas, **captura de mapa base**, e um painel centralizado de gerenciamento.
 
 - **Autor:** Ezequiel M. Rezende
-- **Versão:** 1.4.0 (Adicionado **Capture Map** para captura do tile layer)
+- **Versão:** 1.0.0 (primeira versão pública)
 - **Testado com:** IngeTrazo 0.5.8 (Windows / Linux)
 - **Licença:** GPL-3.0-or-later — a mesma do IngeTrazo
 
@@ -329,7 +329,7 @@ Importações de múltiplos arquivos, recortes (incluindo a exclusão opcional d
 
 ## Limitações Conhecidas
 
-Os comportamentos abaixo são **intencionais ou limitações atuais** da versão 1.4.0. Eles estão documentados aqui para que os usuários não se surpreendam com os resultados:
+Os comportamentos abaixo são **intencionais ou limitações atuais** da versão 1.0.0. Eles estão documentados aqui para que os usuários não se surpreendam com os resultados:
 
 - **`Capture Map` — precisa de datum para metadados UTM:** com um `SceneDatum` o registro carrega as coordenadas UTM/WGS84 reais; sem ele, guarda metros locais e `coord_system="local"` (a imagem continua caindo corretamente na cena).
 - **`Capture Map` — a resolução segue a vista:** a captura é renderizada no tamanho em pixels do viewport; aproxime o zoom antes de capturar quando precisar de mais detalhe.
